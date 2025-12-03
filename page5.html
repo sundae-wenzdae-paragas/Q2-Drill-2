@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page2</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+     <style>
+       body{
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf4egxw9JE3m3KEA743b0MmrwLz6T0sRYwzshO-Po6zFBBGnBVqnBGrvqp20cUMEvm_V0&usqp=CAU');
+        background-size: cover;
+        background-repeat: no-repeat;
+       }
+
+       #logo{
+        height: 45px;
+        width: 45px;
+       }
+       #mynavbar{
+        justify-content: center;
+        display: flex;
+       }
+
+       #form-box{
+  background: rgba(255, 190, 200, 0.5);
+  padding: 3vw;
+  border-radius: 2vw;
+  width: 45%;
+  box-shadow: 0 0.6vw 1.8vw rgba(0, 0, 0, 0.25);
+  margin:auto;
+    }
+
+label {
+  display: block;
+  margin: 1vw 0 0.5vw;
+  font-size: 1rem;
+  color: #333;
+}
+
+input[type="text"], input[type="email"], input[type="number"], input[type="submit"], textarea, select {
+  width: 100%;
+  padding: 1.2vw;
+  margin: 0.8vw 0 1.5vw;
+  border-radius: 0.8vw;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+input[type="submit"] {
+  background-color: #2e8b57;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #3cb371;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 15vw;
+}
+
+ul.navbar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  background: #343a40;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 10vw;
+}
+
+ul.navbar li {
+  margin: 0;
+}
+
+ul.navbar li a {
+  margin: 0 1vw;
+  color: black;
+  padding: 0;
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+
+
+
+  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+
+    <a class="navbar-brand" href="#"><img src="https://files.orangeapps.ph/disk001/School_Files/1/school-65/school_profile/1724046681-141.png" alt="OB logo" class="oblogo" width="100px"></a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="page2.html"><h4>Home</h4></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="page3.html"><h4>About Us</h4></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="page4.html"><h4>Enroll</h4></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="page5.html"><h4>Contact Us</h4></a>
+        </li>
+      </ul>
+
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search">
+        <button class="btn btn-dark" type="button">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+ <div style="padding:20px;">
+    <h1 class="text-center"><strong>Contact Us</strong></h1>
+
+  </div>
+
+  <div id="form-box" style="width:1000px;">
+    <form>
+    <p><h3>Please fill out this application:</h3></p>
+      <label for="first-name"><h5>First Name (required):</h5></label>
+      <input type="text" id="first-name" name="first-name"placeholder="Enter your first name" />
+
+      <label for="last-name"><h5>Last Name (required):</h5></label>
+      <input type="text" id="last-name" name="last-name"placeholder="Enter your last name" />
+
+      <label for="phone"><h5>Phone (required):</h5></label>
+      <input type="text" id="phone" name="phone"  placeholder="e.g., 0917-123-4567" />
+
+      <label for="email"><h5>Email (required):</h5></label>
+      <input type="email" id="email" name="email"  placeholder="e.g., example@mail.com" />
+
+      <label for="campus"><h5>Campus:</h5></label>
+      <select id="campus" name="campus">
+        <option value="fairview">Fairview</option>
+        <option value="Sta. Ana">Sta. Ana</option>
+        <option value="greenhills">Greenhills</option>
+        <option value="Las Piñas">Las Piñas</option>
+        <option value="Angeles">Angeles</option>
+      </select>
+
+      <label for="grade-level">Select grade level:</label>
+      <select id="grade-level" name="grade-level">
+        <option value="Select grade level">Select grade level</option>
+        <option value="Junior Casa (Pre-Kindergarten 1)">Junior Casa (Pre-Kindergarten 1)</option>
+        <option value="Junior Advanced Casa (Pre-Kindergarten 2)">Junior Advanced Casa (Pre-Kindergarten 2)</option>
+        <option value="Advanced Casa (Kindergarten)">Advanced Casa (Kindergarten)</option>
+        <option value="Primary Grade School">Primary Grade School</option>
+        <option value="Intermediate Grade School">Intermediate Grade School</option>
+        <option value="Junior High School">Junior High School</option>
+        <option value="Senior High School">Senior High School</option>
+        <option value="Alumni">Alumni</option>
+      </select>
+
+      <label for="message">Message (required):</label>
+      <textarea id="message" name="message" required placeholder="Enter your message here..."></textarea>
+
+      <input type="submit" value="Send" />
+      <input type="reset" id="reset" name="reset" value="Clear all" />
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+<br>
+
+</div>
+
+</body>
+</html>
